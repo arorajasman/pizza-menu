@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import FooterComponent from "./Components/FooterComponent";
+import HeaderComponent from "./Components/HeaderComponent";
+import Menu from "./Components/Menu";
 
+// Root Component for the project
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // using the className property to add css class to style to the
+    // div component below
+    <div className="container">
+      <HeaderComponent />
+      <Menu />
+      <FooterComponent />
     </div>
   );
 }
